@@ -1,6 +1,11 @@
 name: Build Test Client
 
 on:
+  workflow_dispatch:
+    inputs:
+      my_input:
+        description: "An input for the workflow"
+        required: false
   push:
     branches:
     - "release_test"
